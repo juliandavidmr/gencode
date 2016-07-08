@@ -179,6 +179,7 @@ console.log(gencode.utils.separator(3, "\n") + "|Ends here the result");
 |Ends here the result
  */
 
+
 console.log(gencode.utils.separator(3, "\t") + "|Ends here the result");
 //Result:
 //			|Ends here the result
@@ -187,6 +188,7 @@ console.log(gencode.utils.separator(3, "\t") + "|Ends here the result");
 console.log(gencode.utils.separator(4, "_") + "|Ends here the result");
 //Result:
 //____|Ends here the result
+
 
 var array = ['any', 'number', 'or', 'string', 100, 200];
 gencode.utils.showArray(array);
@@ -198,12 +200,8 @@ gencode.utils.showArray(array);
 //100
 //200
 
+
 var array = ['any', 'number', 'or', 'string', 100, 200];
 console.log(gencode.utils.arrayToString(array, '\t')); //\t, \n, _, etc.
 //any	number	or	string	100	200
 ```
-
-## References ##
-
-* [Full Tilt API Documentation](https://github.com/richtr/Full-Tilt/wiki/Full-Tilt-API-Documentation)
-* [W3C DeviceOrientation Events Spec](http://w3c.github.io/deviceorientation/spec-source-orientation.html)
