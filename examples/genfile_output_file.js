@@ -5,9 +5,9 @@ var input = {
   content: [{
     line: '<title>Example</title>',
     space: 0,
-    tabs: 1
+    tabs: 0
   }, {
-    line: '*<div class="header">',
+    line: '<div class="header">',
   }, {
     line: '<div class="container">',
     space: 5,
@@ -42,14 +42,8 @@ var input = {
   }]
 };
 
-var array = ['1', '2', '3', '4'];
-
-gencode.generator(input, false).then((value) => {
-  gencode.showArray(value);
-});
-
 gencode.generatorfull(input, "/home/julian/Escritorio/test/", "index.html").then((value) => {
   console.log("output: ", value);
 }, function (err) {
   console.log("Error: ", err);
-})
+});
