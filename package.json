@@ -1,0 +1,29 @@
+{
+  "name": "gencode",
+  "version": "1.0.0",
+  "description": "Generator source code and files, with: text format, minification, indenting, and beautify.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliandavidmr/gencode.git"
+  },
+  "keywords": [
+    "code",
+    "source",
+    "file",
+    "fs",
+    "generator",
+    "beautify",
+    "format",
+    "json"
+  ],
+  "author": "https://github.com/juliandavidmr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliandavidmr/gencode/issues"
+  },
+  "homepage": "https://github.com/juliandavidmr/gencode#readme"
+}
