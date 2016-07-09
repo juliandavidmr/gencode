@@ -212,6 +212,32 @@ gencode.generator(input, false).then((value) => {
 
 # Utils
 
+### Read file and process content ##
+
+> *Content file ():*
+a
+aaronita
+aarónico
+aba
+ababa
+ababillarse
+ababol
+abacal
+
+```js
+gencode.utils.toArray('/home/julian/Desktop/test/entrada.txt', 'utf8', '\n').then((value) => { //Too: \n, \t, -, etc.
+  console.log("Result:", JSON.stringify(value));
+}, (error) => {
+  console.log("ERROR=>", error);
+});
+
+/*
+Result: ["a","aaronita","aarónico","aba","ababa","ababillarse","ababol","abacal"]
+*/
+```
+
+### Generating separation ##
+
 ```js
 console.log(gencode.utils.separator(3, "\n") + "|Ends here the result");
 //Result:
@@ -221,18 +247,21 @@ console.log(gencode.utils.separator(3, "\n") + "|Ends here the result");
 
 |Ends here the result
  */
+```
 
-
+```js
 console.log(gencode.utils.separator(3, "\t") + "|Ends here the result");
 //Result:
 //			|Ends here the result
+```
 
-
+```js
 console.log(gencode.utils.separator(4, "_") + "|Ends here the result");
 //Result:
 //____|Ends here the result
+```
 
-
+```js
 var array = ['any', 'number', 'or', 'string', 100, 200];
 gencode.utils.showArray(array);
 //Result:
@@ -242,8 +271,8 @@ gencode.utils.showArray(array);
 //string
 //100
 //200
-
-
+```
+```js
 var array = ['any', 'number', 'or', 'string', 100, 200];
 console.log(gencode.utils.arrayToString(array, '\t')); //\t, \n, _, etc.
 //any	number	or	string	100	200
