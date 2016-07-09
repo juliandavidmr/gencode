@@ -1,6 +1,6 @@
 {
   "name": "gencode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generator source code and files, with: text format, minification, indenting, and beautify.",
   "main": "index.js",
   "scripts": {

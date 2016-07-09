@@ -1,5 +1,6 @@
-# genCode
----
+
+Documents
+-------------
 
 #### Generator source code and files, with: text format, minification, indenting, and beautify. ####
 
@@ -58,7 +59,11 @@ Lorem ipsum 3
     - **space**: Initial spacing before the line (number) **[Optional]** *Default 0 spaces*
     - **tabs**: Initial tabulations space. **[Optional]** *Default 0 spaces, no tabs*
 
---*Note*: _The main priority is the spaces, ie, if there are spaces and tabs then the_ spaces are taken.
+
+> **Note:**
+> -  The main priority is the spaces, ie, if there are spaces and tabs then the_ spaces are taken.
+
+
 ```js
 var input = {
 	name: 'index.html',
@@ -101,7 +106,45 @@ var input = {
 		tabs: 2
 	}]
 };
+```
+#### <i class="icon-file"></i> Also
 
+```js
+var input = {
+	name: 'index.html',
+	content: [{
+		line: '<title>Example</title>',
+		space: 0,
+		tabs: 0
+	}, {
+		line: '<div class="header">',
+	}, {
+		line: '<div class="container">',
+		tabs: 1
+	}, {
+		line: '<div class="logo">',
+		space: 5
+	}, {
+		line: '<a href="/">Title</a>',
+		space: 5
+	}, {
+		line: '</div>',
+		space: 5
+	}, {
+		line: '<div class="header-right">',
+		tabs: 1
+	}, {
+		line: '<a href="/empresa"><span>Hello</span></a>',
+		space: 5
+	}, {
+		line: '</div>',
+		space: 2,
+		repeat: 2 //Repeats </div> two times
+	}]
+};
+```
+
+```js
 gencode.generatorfull(input, "/home/julian/Desktop/test/", "index.html").then((value) => {
 	console.log("output: ", value);
 }, function(err) {
@@ -205,3 +248,6 @@ var array = ['any', 'number', 'or', 'string', 100, 200];
 console.log(gencode.utils.arrayToString(array, '\t')); //\t, \n, _, etc.
 //any	number	or	string	100	200
 ```
+
+
+----------
