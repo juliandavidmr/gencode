@@ -2,6 +2,8 @@
 Documents
 -------------
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/juliandavidmr/gencode.svg)](https://greenkeeper.io/)
+
 #### Generator source code and files, with: text format, minification, indenting, and beautify. ####
 
 This library also provides all the functions necessary to convert between different data types and store in files.
