@@ -28,7 +28,7 @@
   "homepage": "https://github.com/juliandavidmr/gencode#readme",
   "dependencies": {
     "create-file": "^1.0.1",
-    "isarray": "^1.0.0",
+    "isarray": "^2.0.1",
     "snack-file": "^1.0.0"
   }
 }
